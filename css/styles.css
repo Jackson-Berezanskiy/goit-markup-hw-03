@@ -1,199 +1,84 @@
-/*Studio, for index.html*/
+:root{
+    --color_primery_brand: #4D5AE5;
+    --color_dark: #2E2F42;
+    --color_success: #31D0AA;
+    --color_text: #434455;
+    --color_subtle_text: #8E8F99;
+    --color_accent: #E7E9FC;
+    --color_light: #F4F4FD;
+}
 body{
+    background-color: #FFFFFF;
     font-family: 'Roboto', 'Raleway', sans-serif;
-    color:#434455;
 }
-
+a{
+    color: var(--color_text);
+    text-decoration: none;
+}
+a:hover,
 a:focus{
-    background-color:#4D5AE5;
-    color#FFFFFF;
+    color: var(--color_primery_brand);
 }
-a:hover{
-    backround-color:#4D5AE5;
-    color:red;
+button{
+    background-color: var(--color_accent);
+    color: var(--color_primery_brand);
 }
-/*Body_Header*/
-.header {
-    width: 1440px;
-    height: 72px;
-    display:inline-block;
+button:hover,
+button:focus{
+    background-color: var(--color_primery_brand);
+    color: white;
 }
-.logo {
-    text-decoration: none;
-    color: #2E2F42;
-}
-.logo span {
-    color: #4D5AE5;
-}
-.navigation a{
-    text-decoration: none;
-    color:#2E2F42;
-}
-.contacts {
-    text-decoration: none;
-    color:#434455;
-}
-header li{
-    list-style-type: none;
-    display: inline;
-}
-/*Body_Main_Section1*/
-.hero {
-    width: 1440px;
-    height: 603px;
-    background-color: #2E2F42;
-}
-.hero h1 {
-    position: absolute;
-width: 492px;
-height: 120px;
-left: 474px;
-top: 264px;
-
-/* Header 1 */
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 600;
-font-size: 56px;
-line-height: 60px;
-
-
-text-align: center;
-letter-spacing: 0.02em;
-
-color: #FFFFFF;
-}
-.button {
-    text-align: center;
-    width: 130px;
-    height: 50px;
-    margin-left: 650px;
-    margin-top: 450px;
-    background-color:#4D5AE5;
-    color: #FFFFFF;
-}
-/*Body_Main_Section2*/
 .nonameh2{
     display: none;
 }
-.advantages{
-    width: 1128px;
-    height: 104px;
-    margin-top: 120px;
-    margin-right: 156px;
-    margin-bottom: 120px;
-    margin-left: 156px;
+.logo{
+    font-size: 18px;
+    line-height: 1.33;
 }
-.advantages li {
-    display: inline-block;
-}
-.advantages p {
-    text-align: center;
-    max-width: 250px;
-}
-/*Body_Main_Section3*/
-.occupation{
-    width: 1128px;
-    height: 412px;
-    margin-top: 120px;
-    margin-right: 156px;
-    margin-bottom: 120px;
-    margin-left: 156px;
-}
-.occupation li{
-    list-style-type: none;
-    display: inline-block;
-}
-.occupation h2{
-    text-align: center;
-}
-/*Body_Main_Section4(Team)*/
-.team{
-    width: 1440px;
-    height: 732px;
-    background-color: #F4F4FD;
-}
-.team li{
-    list-style-type: none;
-    display: inline-block;
-    
-}
-.team h2{
-    text-align: center;
-}
-.team_list{
-    margin-top: 232px;
-    margin-right: 156px;
-    margin-bottom: 120px;
-    margin-left: 156px;
-    text-align: center;
-}
-/*Body_Footer*/
-footer{
-    background-color: #2E2F42;
-    width: 1284px;
-    height: 310px;
-    padding-top: 100px;
-    margin-right: 1020px;
-    margin-bottom: 100px;
-    padding-left: 156px;
+.logo span{
+    color:var(--color_primery_brand);
 }
 .logo_footer{
-    color:#F4F4FD;
-   text-decoration: none;
+    font-size: 18px;
+    line-height: 1.33;
 }
 .logo_footer span{
-    color:#4D5AE5;
+    color:var(--color_primery_brand);
 }
-footer p{
-    color:#E7E9FC;
-    width: 264px;
-    height: 72;
+.navigation a{
+    font-size: 16px;
+    line-height: 1.5;
 }
-/*PORTFOLIO, for portfolio.html*/
-.filter{
-    margin-top: 96px;
-    margin-right: 427px;
-    margin-bottom: 72px;
-    margin-left: 427px;
+h1{
+    color:white;
 }
-.filter li{
+.hero{
+    font-size: 56px;
+    line-height: 1.07;
+    background-color: var(--color_dark);
+}
+.button{
+    font-size:16px;
+    line-height: 1.19;
+}
+h2{
+    font-size: 36px;
+    line-height: 1.2;
+}
+h3{
+    font-size: 30px;
+    line-height: 1.5;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+footer{
+    background-color:var(--color_dark);
+}
+li{
     list-style-type: none;
-    display: inline;
-    text-align: center;
-     
 }
-.filter button{
-    background-color:#E7E9FC;
-    color:#4D5AE5;
-    height:48px;
-}
-.fiter button:hover,kl,.:focus{
-    background-color:#4D5AE5;
-    color: white;
-}
-.portfolio_section1{
-    width: 1128px;
-    height: 420px;
-}
-.portfolio_section1 li{
-    list-style-type: none;
-    display: inline-block;
-}
-.portfolio_section2{
-    width: 1128px;
-    height: 420px;
-}
-.portfolio_section2 li{
-    list-style-type: none;
-    display: inline-block;
-}
-.portfolio_section3{
-    width: 1128px;
-    height: 420px;
-}
-.portfolio_section3 li{
-    list-style-type: none;
-    display: inline-block;
+button{
+    cursor: pointer;
 }
