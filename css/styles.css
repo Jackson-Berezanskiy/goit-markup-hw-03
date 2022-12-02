@@ -1,31 +1,31 @@
 :root{
-    --color_primery_brand: #4D5AE5;
-    --color_dark: #2E2F42;
-    --color_success: #31D0AA;
-    --color_text: #434455;
-    --color_subtle_text: #8E8F99;
-    --color_accent: #E7E9FC;
-    --color_light: #F4F4FD;
+    --color_iris: #4D5AE5;
+    --color_navy_blue: #2E2F42;
+    --color_green: #31D0AA;
+    --color_slate: #434455;
+    --color_light_slate: #8E8F99;
+    --color_cornflower: #E7E9FC;
+    --color_cloud: #F4F4FD;
 }
 body{
     background-color: #FFFFFF;
     font-family: 'Roboto', 'Raleway', sans-serif;
 }
 a{
-    color: var(--color_text);
     text-decoration: none;
 }
 a:hover,
 a:focus{
-    color: var(--color_primery_brand);
+    color: var(--color_iris);
 }
 button{
-    background-color: var(--color_accent);
-    color: var(--color_primery_brand);
+    background-color: var(--color_cornflower);
+    color: var(--color_iris);
+    border-style: none;
 }
 button:hover,
 button:focus{
-    background-color: var(--color_primery_brand);
+    background-color: var(--color_iris);
     color: white;
 }
 .nonameh2{
@@ -34,51 +34,96 @@ button:focus{
 .logo{
     font-size: 18px;
     line-height: 1.33;
+    color: var(--color_navy_blue);
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
 }
 .logo span{
-    color:var(--color_primery_brand);
+    color:var(--color_iris);
 }
 .logo_footer{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
     font-size: 18px;
     line-height: 1.33;
+    color: var(--color_cloud);
 }
 .logo_footer span{
-    color:var(--color_primery_brand);
+    color:var(--color_iris);
 }
 .navigation a{
     font-size: 16px;
     line-height: 1.5;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color_navy_blue);
+}
+.contacts{
+    color: var(--color_slate);
 }
 h1{
     color:white;
 }
 .hero{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
-    background-color: var(--color_dark);
+    background-color: var(--color_navy_blue);
+    text-align: center;
 }
 .button{
+    background-color: var(--color_iris);
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     font-size:16px;
     line-height: 1.19;
 }
 h2{
     font-size: 36px;
     line-height: 1.2;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color_navy_blue);
+    text-transform: uppercase;
+    text-align: center;
 }
 h3{
-    font-size: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 1.5;
+    color: var(--color_navy_blue);
 }
 p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    color: var(--color_slate);
 }
 footer{
-    background-color:var(--color_dark);
+    background-color:var(--color_navy_blue);
+}
+footer p{
+    color: var(--color_cloud);
 }
 li{
     list-style-type: none;
 }
 button{
     cursor: pointer;
+}
+.filter button{
+    
 }
