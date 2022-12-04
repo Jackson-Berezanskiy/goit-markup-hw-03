@@ -10,19 +10,20 @@
 body{
     background-color: #FFFFFF;
     font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
 }
 a{
     text-decoration: none;
 }
 a:hover,
 a:focus{
-    background-color: var(--color_iris);
-    color: white;
+    color: var(--color_iris);
 }
 button{
     background-color: var(--color_cornflower);
     color: var(--color_iris);
     border-style: none;
+    font-family: inherit;
 }
 button:hover,
 button:focus{
@@ -64,6 +65,10 @@ button:focus{
     font-weight: 600;
     color: var(--color_navy_blue);
 }
+.navigation a:focus,
+.navigation a:hover{
+    color: var(--color_iris);
+}
 .contacts{
     color: var(--color_slate);
 }
@@ -95,24 +100,24 @@ h1{
 h2{
     font-size: 36px;
     line-height: 1.2;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 700;
     color: var(--color_navy_blue);
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 h3{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
     color: var(--color_navy_blue);
 }
 p{
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: inherit;
+    font-style: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -145,4 +150,7 @@ button{
 }
 .team{
     background-color: var(--color_cloud);
+}
+.team_list li{
+    background-color: white;
 }
