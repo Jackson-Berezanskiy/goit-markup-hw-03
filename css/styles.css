@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 :root{
     --color_iris: #4D5AE5;
     --color_navy_blue: #2E2F42;
@@ -12,6 +17,11 @@ body{
     font-family: 'Roboto', 'Raleway', sans-serif;
     font-style: normal;
     width: 100%;
+}
+.containe{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
@@ -91,6 +101,10 @@ h1{
     line-height: 1.07;
     background-color: var(--color_navy_blue);
     text-align: center;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    border: 1px solid var(--color_navy_blue);*/
 }
 .button{
     background-color: var(--color_iris);
@@ -136,6 +150,9 @@ footer p{
 li{
     list-style-type: none;
 }
+.header li{
+    margin: 0px 10px;
+}
 button{
     cursor: pointer;
 }
@@ -148,6 +165,8 @@ button{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 24px;
+    flex-basis: calc((100%-48px)/3);
 }
 
 .filter button{
@@ -165,21 +184,27 @@ button{
 }
 .advantages{
     text-align: center;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .occupation{
-    
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .team{
     background-color: var(--color_cloud);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .team_list li{
     background-color: white;
 }
 .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .header a{
@@ -190,6 +215,9 @@ button{
 }
 .contacts{
     display: flex;
+}
+.contacts li{
+    margin: 0 40px;
 }
 .advantages ul{
     display: flex;
