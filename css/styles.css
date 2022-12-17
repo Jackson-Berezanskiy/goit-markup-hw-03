@@ -52,6 +52,7 @@ button:focus{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
+    padding: 24px 0;
 }
 .logo span{
     color:var(--color_iris);
@@ -82,6 +83,8 @@ button:focus{
 }
 .contacts{
     color: var(--color_slate);
+    display: block;
+    padding: 24px 0;
 }
 h1{
     font-family: 'Roboto';
@@ -99,6 +102,8 @@ h1{
     line-height: 1.07;
     background-color: var(--color_navy_blue);
     text-align: center;
+    padding-top: 192px;
+    padding-bottom: 192px;
 }
 .button{
     background-color: var(--color_iris);
@@ -111,19 +116,8 @@ h1{
     height: 51px;
     margin-top: 48px;
 }
-.hero_div{
-    padding-top: 192px;
-    padding-bottom: 192px;
-}
 h2{
-    font-size: 36px;
-    line-height: 1.2;
-    font-family: inherit;
-    font-style: inherit;
-    font-weight: 700;
-    color: var(--color_navy_blue);
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+    text-align: center;
 }
 h3{
     font-family: inherit;
@@ -133,16 +127,18 @@ h3{
     line-height: 1.5;
     color: var(--color_navy_blue);
 }
-p{
+.footer_text{
     font-family: inherit;
     font-style: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--color_slate);
+    color: var(--color_cornflower);
 }
 footer{
     background-color:var(--color_navy_blue);
+    padding-top: 100px;
+    padding-bottom: 100px;      
 }
 footer p{
     color: var(--color_cloud);
@@ -152,6 +148,10 @@ li{
 }
 button{
     cursor: pointer;
+}
+.filter{
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .filter button{
     font-family: 'Roboto';
@@ -170,6 +170,8 @@ button{
 }
 .team{
     background-color: var(--color_cloud);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team_list li{
     background-color: white;
@@ -177,8 +179,16 @@ button{
 .container{
     display: flex;
     width: 1158px;
+    height: auto;
     margin: 0 auto;
     padding: 0 15px;
+}
+.hero .container{
+    flex-direction: column;
+    align-items: center;
+}
+.navigation{
+    padding: 24px 0;
 }
 .navigation ul{
     display: flex;
@@ -191,11 +201,12 @@ button{
 }
 .container ul{
     display: flex;
+    justify-content: center;
 }
-.contacts_list :last-child{
+.tel{
     margin-left: 40px;
 }
-.advantages .container{
+.advantages{
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -223,44 +234,32 @@ button{
     align-items: center;
 }
 .team .container h2{
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 .team_list{
-    margin-bottom: 120px;
     text-align: center;
 }
 .team_list :not(:last-child){
     margin-right: 24px;
 }
 .team_list_bio{
-    margin: 32px 16px;
+    padding: 32px 16px;
 }
 footer .container{
     flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
-footer p{
-    width: 264px;
-    margin-bottom: 100px;
-}
-footer a{
-    margin-top: 100px;
+.logo_footer{
     margin-bottom: 16px;
 }
-.filter{
-}
 .filter .container{
-    flex-direction: column;
-    align-items: center;
-    padding-top: 96px;
+
+    display: block;
+    text-align: center;
 }
 .filter-image{
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    margin-bottom: 120px;
     margin-top: 72px;
 }
 .filter-image li{
@@ -268,7 +267,11 @@ footer a{
 }
 .filter-image-text{
     padding: 32px 0;
+    padding-left: 16px;
     border: 1px solid var(--color_cornflower);
+}
+.filter-image-text h3{
+    margin-bottom: 8px;
 }
 .filter-button{
     
@@ -279,7 +282,7 @@ footer a{
 }
 header{
     /*border-bottom: 1px solid black;*/
-    box-shadow: 0px 4px 4px var(--color_slate);*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /*border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
     */
